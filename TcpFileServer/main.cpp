@@ -1,11 +1,9 @@
-#include "tcpfileserver.h"
 #include <QApplication>
+#include "filetransferapp.h"
 
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    TcpFileServer w;
-    w.show();
-
-    return a.exec();
+int main(int argc, char *argv[]) {
+    QApplication app(argc, argv);
+    FileTransferApp window;
+    window.show();
+    return app.exec();
 }

@@ -13,6 +13,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
+        ../TcpFileSender/tcpfilesender.cpp \
         tcpfileserver.cpp
 
-HEADERS  += tcpfileserver.h
+HEADERS  += tcpfileserver.h \
+    ../TcpFileSender/tcpfilesender.h \
+    FileTransferApp.h
